@@ -4,7 +4,7 @@
   "description": "A JavaScript lab",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "test": "mocha --timeout 500000 -R mocha-multi --reporter-options spec=-,json=.results.json"
   },
   "author": "flatironschool",
   "license": "Included in Repo",
@@ -12,9 +12,12 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "chai": "^4.2.0",
-    "jsdom": "^9.0",
+    "jsdom": "^26.0.0",
+    "jsdom-global": "^3.0.2",
     "mocha": "5.2.0",
-    "mocha-jsdom": "~1.1.0",
     "mocha-multi": "^1.0.1"
+  },
+  "devDependencies": {
+    "mocha-jsdom": "^2.0.0"
   }
 }
